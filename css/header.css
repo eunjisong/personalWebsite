@@ -1,0 +1,48 @@
+header {
+  position: relative;
+  /* make parent position as relative: makes child positioning in relation to the parent */
+  height: 80px;
+  background-color: #666f7f;
+  text-align: center;
+  /* makes the text in header in center */
+  box-shadow: 0 8px 20px -4px rgba(0,0,0,.4);
+  z-index: 2;
+}
+
+header .logo {
+  /* only apply if .logo exist under header */
+  background-color: green;
+  position: absolute;
+  /* once you have the parent, you need to put the child as absolute */
+  top: -15px;
+}
+
+header .links{
+  line-height: 80px;
+}
+
+header .links a {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 5px;
+  margin-right: 5px;
+  letter-spacing: .1em;
+  color: #a1afc4;
+  /* text color = color */
+}
+
+header .links a:hover{
+  /* when you hover on the a element */
+  color: white;
+}
+
+header .menuicon {
+  display: none;
+  /* hide for now */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  font-size: 1.7em;
+}
+

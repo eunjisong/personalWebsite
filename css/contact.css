@@ -1,0 +1,25 @@
+.contact {
+  height: 50vh;
+  background-color: #2d3446;
+}
+
+.contact .content {
+  text-align: center;
+  /* horizontal centering */
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.contact .email {
+  font-size: 3em;
+  color: #b6c0ce;
+  text-decoration: none;
+}
+
+.contact .socialbar {
+  display: inline-block;
+  font-size: 3em;
+  color: white;
+  margin-right: 20px;
+}

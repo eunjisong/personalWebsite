@@ -1,0 +1,60 @@
+/* THINGS WE"RE USING AGAIN AGAIN */
+
+body, p, h1, h2, h3, h4 {
+  margin: 0;
+  /* margin between 2 elememnt */
+  padding: 0;
+  /* padding: inside of an element */
+  font-family: 'Open Sans', sans-serif;
+}
+
+.logo {
+  display: block;
+  /* achor tag default inline positioning */
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: green;
+  text-align: center;
+  line-height: 100px;
+  color: white;
+  font-size: 4em;
+  text-decoration: none;
+}
+
+.logo::after {
+  content: "C";
+}
+
+.logo.small {
+  transform: scale(.5)
+  /* resize change position : resizing to half*/
+}
+
+h1 {
+  font-size: 5em;
+  text-transform: uppercase;
+  color: white;
+  /* left:50%; */
+  /* position this 50% to the right from entire width of the parent */
+  /* transform: translateX(-50%); */
+  /* offset it by 50%*/
+  /* z-index: 10; */
+}
+
+h2 {
+  font-size: 6em;
+}
+
+h2 b{
+  color: #b5bfce;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h3 a {
+  text-decoration: none;
+  color: #b5bfce;
+}

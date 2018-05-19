@@ -1,0 +1,62 @@
+.portfolio {
+  height: 100vh;
+  background-color: #454a5b;
+}
+
+.portfolio .content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.portfolio .gallery {
+  /* it's the parent elem */
+  display: flex;
+  flex-direction: row;
+}
+
+.portfolio .gallery a {
+  display: inline-block;
+  width: 33.3vw;
+  height: 33.3vw;
+  background-color: red;
+  /* border: 1px solid black; */
+}
+
+.portfolio .gallery a:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0);
+  transition: all .5s;
+  /* transition gives the natural shadowing */
+}
+
+.portfolio .gallery a:hover:after {
+  background-color: rgba(0,0,0,.5)
+}
+
+.portfolio .blockMortar {
+  background-image: url(../images/bandm.png);
+  background-size: cover;
+  background-size: 140%;
+  background-position-x: -2em;
+  background-position-y: -7em;
+}
+
+.portfolio .constalay {
+  background-image: url(../images/constalay.png);
+  background-size: cover;
+  background-size: 120%;
+  background-position-x: -1.5em;
+  background-position-y: -3em;
+}
+
+.portfolio .guessgame {
+  background-image: url(../images/binary.jpg);
+  background-size: cover;
+}
